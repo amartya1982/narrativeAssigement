@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Structure of Visualization</title>
+</head>
+
+<body>
+<div class = "about" style="width: 600px;font-family: sans-serif">
+  <h1 align="left">Narrative Visualization</h1>
+  
+  <h2>Messaging</h2>
+  
+  <p>With the different visualization graph these are the following message I like to convey:</p>
+  <ul>
+    <li>One can easily keep a track on the exact expense they are doing over any time period</li>
+    <li>One can able to identify the aspect ratio how the expense are happening</li>
+    <li>The mortgage payment is the maximum expense followed by car emi and then social expense.</li>
+    <li>The last graph which is  expense tracker tracks exactly what date how much I spend on what things.
+</li>
+  </ul>
+  
+  <h2>Visual Structure</h2>
+
+  <p>This narrative visualization follows a "an interactive slideshow" structure consisting of three author-driven
+  scenes.</p>
+  
+  <p>This narrative visualization uses a hybrid structure and consists of scenes,
+    annotations, parameters, and triggers.</p>
+
+  <h2>Scenes</h2>
+  Four author-driven scenes follow an identical layout. The intention is to draw the reader's attention to the chart and maintain through the transition between scenes. The position of elements is maintained across all scenes consistent to keep the reader oriented on the chart. Transitions are used between scenes to make the connection between scenes.
+
+  <p>Scenes can be navigated with page buttons at the top of the display which shows the current scene
+    number highlighted and allows the reader to move to a different scene in the story:</p> 
+    <ul>
+    <li>Scene-1: The main scene or the Home scene </li>
+    <li>Scene-2: Narrative Visualization by Amartya Roy Chowdhury.</li>
+    <li>Scene-2: The next scene is the pie chart expense report scene.</li>
+    <li>Scene-3: The third scene is the bar chart report that shows the same expense in bar chart format.</li>
+    <li>Scene-4: The fourth scene shows the date vrs expense amount graph for some pre defined category how I logged the expense</li>
+   
+    </ul>
+    <p>Scenes are organized in a way that reader can make sense out of it. Showing the first scene as a graph with category of expenses and its ratio. This information sets up the stage about the story. Then comes, a different angle of representation the data which shows the expense report that I have input over the time. All the data are real time and get the information from the user which makes it very interactive..
+    </p>
+
+<h2>Annotations</h2>
+  <p>Annotations are added with the data point in the story 
+to explain the significance of the data. It helps the reader to explain key points from the chart.</p>
+
+  <p>Annotations for each scene are added at the start of the scene and removed during transitions so that the reader is
+    drawn to the new annotation and data point in the story.</p>
+
+  <p>Annotations use the same template : even though the color has changed and I chose the maintain the same look and feel button across screen.
+    chart.</p>
+
+  <h2>Parameters</h2>
+  The common parameters for all scenes are as follows:
+  <ul>
+    <li><b>Scene name</b> - scenes are named which tells whats the scene is about.</li>
+    <li><b>Chart axis and Text</b> - these elements are parameters which change as per the selected scene.</li>
+  </ul>
+
+  Parameters specific to the author-driven for the "Bar chart" but thats complete user driven for the (Pie chart and the expence tracker scene ) : 
+  <ul>
+    <li><b>Annotation aiming point, position and text</b> - annotations are parameterized with an aiming point,
+a text offset and the content of the annotation</li>
+  </ul>
+ 
+  
+  <p>The scene number drives many of the other parameters such as charts, annotations 
+and explanation text with every chart.</p>
+  <p>The reader uses scene numbers to navigate between different scenes and transitions 
+are implemented throughout the visualization.</p>
+  
+
+  <h2>Triggers</h2>
+  <p>The first triggers is the randition of the poe chart based on the firebase data already store in the DB and then each time it changes 
+      based on the user input.
+  <p>The next one triigers the bar chart which starts from button with a delay and trigger and goes to the appropriate value
+      based on the dsaved data from database.</p>
+
+  <p>The user navigates to the last scetion where they can track and save the expense daily basis and real time chart shows what the data looks like.</p>
+  <p>The last scene shows a hybrid section where author can drive the graphy presentation based on the inpout where as the user can check by interacting with the graoh
+      at any point by clicking the point and get to know how the expense is varrying for a particular date.</p>
+  
+  <h2>Acknowledgments</h2>
+  <ul>
+    <li>d3 v5 used for charts https://d3js.org/d3.v5.js</li>
+    <li>Database use Google firebase</li>
+    <li>Website hosted on Github Pages</li>
+  </ul>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Expenses Bar chart</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <style>
+    h2, p{
+      margin: 10px 0;
+    }
+    header{
+      margin-bottom: 40px;
+    }
+    .tip{
+      padding: 10px;
+      background: #333;
+      color: #fff;
+    }
+    .tip .delete{
+      color: hotpink;
+      font-size: 0.8em;
+    }
+  </style>
+</head>
+<body class="indigo">
+
+  <header class="indigo darken-1 section">
+    <h2 class="center white-text">Bar Chart Visualization</h2>
+    <p class="flow-text grey-text center text-lighten-2">Monthly money tracker for Amartya...</p>
+  </header>
+
+  <div class="input-field center">
+    <button id="myButton" class="btn-large pink white-text" onclick="location.href = 'index.html'">Home</button>
+  </div>
+  <!--<div class="row">
+        <p></p>
+        <button id="myButton" class="float-left submit-button" onclick="location.href = 'index.html'">Home</button>
+  </div> -->
+  
+    <div class="canvas"> </div>
+
+    
+    <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase-firestore.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyARxnxidO2Ba94YQZeear4BXKensm7DyZ4",
+        authDomain: "api-project-536256714275.firebaseapp.com",
+        databaseURL: "https://api-project-536256714275.firebaseio.com",
+        projectId: "api-project-536256714275",
+        storageBucket: "api-project-536256714275.appspot.com",
+        messagingSenderId: "536256714275",
+        appId: "1:536256714275:web:26d3868ce34424e6368396",
+        measurementId: "G-B44LW83Y55"
+      };
+      firebase.initializeApp(config);
+      const db = firebase.firestore();
+      db.settings({ timestampsInSnapshots: true });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.js"></script>
+    <script src="index2.js"></script>
+</body>
+</html>
